@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPATest", "SPATest\SPATest.csproj", "{5B63B140-4FA9-4706-AB69-990290A1DF54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPATest.Test", "SPATest.Test\SPATest.Test.csproj", "{84153A4F-6B7A-4765-B80B-F30EE497944A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B63B140-4FA9-4706-AB69-990290A1DF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B63B140-4FA9-4706-AB69-990290A1DF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B63B140-4FA9-4706-AB69-990290A1DF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B63B140-4FA9-4706-AB69-990290A1DF54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84153A4F-6B7A-4765-B80B-F30EE497944A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84153A4F-6B7A-4765-B80B-F30EE497944A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84153A4F-6B7A-4765-B80B-F30EE497944A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84153A4F-6B7A-4765-B80B-F30EE497944A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EC518C0-5B11-4935-AE0C-01FEBF104E37}
+	EndGlobalSection
+EndGlobal
