@@ -79,15 +79,26 @@ namespace SPATest
 
         private static void SeedData(ApiContext context)
         {
-            var p1 = new Product() { Name = "Nike", Price = 99.99M };
-            var p2 = new Product() { Name = "Puma", Price = 89.99M };
-            var p3 = new Product() { Name = "Adidas", Price = 94.99M };
-            var p4 = new Product() { Name = "Reebok", Price = 75.99M };
-
-            context.Products.Add(p1);
-            context.Products.Add(p2);
-            context.Products.Add(p3);
-            context.Products.Add(p4);
+            context.Products.Add(new Product() { Name = "A001", Price = 99.99M });
+            context.Products.Add(new Product() { Name = "A002", Price = 89.99M });
+            context.Products.Add(new Product() { Name = "A003", Price = 99.99M });
+            context.Products.Add(new Product() { Name = "A004", Price = 19.99M });
+            context.Products.Add(new Product() { Name = "A005", Price = 39.99M });
+            context.Products.Add(new Product() { Name = "A006", Price = 59.99M });
+            context.Products.Add(new Product() { Name = "A007", Price = 69.99M });
+            context.Products.Add(new Product() { Name = "A008", Price = 55.99M });
+            context.Products.Add(new Product() { Name = "A009", Price = 67.99M });
+            context.Products.Add(new Product() { Name = "A010", Price = 23.99M });
+            context.Products.Add(new Product() { Name = "A011", Price = 22.99M });
+            context.Products.Add(new Product() { Name = "A012", Price = 12.99M });
+            context.Products.Add(new Product() { Name = "A013", Price = 67.99M });
+            context.Products.Add(new Product() { Name = "A014", Price = 67.99M });
+            context.Products.Add(new Product() { Name = "A015", Price = 45.99M });
+            context.Products.Add(new Product() { Name = "A016", Price = 12.99M });
+            context.Products.Add(new Product() { Name = "A017", Price = 7.99M });
+            context.Products.Add(new Product() { Name = "A018", Price = 9.99M });
+            context.Products.Add(new Product() { Name = "A019", Price = 19.99M });
+            context.Products.Add(new Product() { Name = "A020", Price = 20.99M });
 
             context.SaveChanges();
         }
