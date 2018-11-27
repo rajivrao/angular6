@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-th {
-  background-color: linen;  
+.table-custom th {
+  background-color: linen;
+}
+
+.table-custom table-row {
+  line-height: 33px;
+}
+
+.table-navigation {
+  float: right;
+  margin-right: 10px
+}
+
+.table-search {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: -5px
 }

@@ -99,6 +99,16 @@ namespace SPATest
             context.Products.Add(new Product() { Name = "A018", Price = 9.99M });
             context.Products.Add(new Product() { Name = "A019", Price = 19.99M });
             context.Products.Add(new Product() { Name = "A020", Price = 20.99M });
+            context.Products.Add(new Product() { Name = "B001", Price = 99.99M });
+            context.Products.Add(new Product() { Name = "B002", Price = 89.99M });
+            context.Products.Add(new Product() { Name = "B003", Price = 99.99M });
+            context.Products.Add(new Product() { Name = "B004", Price = 19.99M });
+            context.Products.Add(new Product() { Name = "B005", Price = 39.99M });
+            context.Products.Add(new Product() { Name = "B006", Price = 59.99M });
+            context.Products.Add(new Product() { Name = "B007", Price = 69.99M });
+            context.Products.Add(new Product() { Name = "B008", Price = 55.99M });
+            context.Products.Add(new Product() { Name = "B009", Price = 67.99M });
+            context.Products.Add(new Product() { Name = "B010", Price = 23.99M });
 
             context.SaveChanges();
         }

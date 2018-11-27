@@ -15,7 +15,10 @@ export class FetchDataComponent {
     _http.get<Product[]>(baseUrl + 'api/SampleData/Products').subscribe(result => {
       this.products = result;
     }, error => console.error(error));    
-  }  
+  }
+
+  //initializing page number to one
+  p: number = 1;
 }
 
 interface Product {
