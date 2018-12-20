@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using PrototypeApi;
 using PrototypeApi.DbModels;
 
 namespace SPATest.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    [Route("api/[controller]")]    
+    [Authorize]
     public class SampleDataController : Controller
     {
         private readonly ApiContext _context;

@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PrototypeApi;
 using PrototypeApi.DbModels;
+using IdentityServer4.AccessTokenValidation;
 
 namespace SPATest
 {
@@ -26,6 +27,15 @@ namespace SPATest
                     options.UseInMemoryDatabase(databaseName: "Add_writes_to_database"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+               .AddIdentityServerAuthentication(options =>
+               {
+                   options.Authority = "https://demo.identityserver.io";
+                   options.RequireHttpsMetadata = true;
+
+                   options.ApiName = "api";
+               });
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -55,6 +65,8 @@ namespace SPATest
                 var context = serviceScope.ServiceProvider.GetService<ApiContext>();
                 SeedData(context);                
             }
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {

@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { Http } from '@angular/http';
+import { HttpService } from '../services/http.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import 'rxjs/add/operator/map';
@@ -17,7 +17,7 @@ export class AddDataComponent implements OnInit {
   errorMessage: any;
   myAppUrl: string = "";  
 
-  constructor(private _http: Http, @Inject('BASE_URL') baseUrl: string,
+  constructor(private _http: HttpService, @Inject('BASE_URL') baseUrl: string,
      private _fb: FormBuilder, private _router: Router) {
 
     this.myAppUrl = baseUrl;
